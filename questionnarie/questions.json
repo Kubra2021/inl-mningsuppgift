@@ -95,7 +95,7 @@
       "question" : "Do you have any experience caring for pets?" ,
        "answers" : {
            "Yes" :  {"Cat" : 1, "Dog" : 1, "Rabbit": 1, "Fish" : 1} ,
-           "No"  :  {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 0}
+           "No"  :  {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 1}
       }
    },
 
