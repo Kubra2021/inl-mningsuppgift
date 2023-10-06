@@ -1,0 +1,140 @@
+{
+   "questions" : [ 
+ 
+   {
+     "question" : "Do you like to play with your pet?" ,
+     "answers"  : {
+          "Yes" : {"Cat" : 1, "Dog" : 2, "Rabbit": 1, "Fish" : 0},
+          "No"  : {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 2}
+      }
+   },
+
+   {
+     "question" : "Do you prefer a quiet pet?" ,
+     "answers"  : {
+          "Yes" : {"Cat" : 1, "Dog" : 0, "Rabbit": 2, "Fish" : 2},
+          "No"  : {"Cat" : 0, "Dog" : 2, "Rabbit": 0, "Fish" : 0} 
+      }
+   },
+
+   {
+      "question": "Are you allergic to fur animals?" ,
+      "answers" : {
+          "Yes" :  {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 2},
+          "No"  :  {"Cat" : 2, "Dog" : 2, "Rabbit": 1, "Fish" : 0}
+   
+      }
+   },
+
+   {
+      "question" : "Do you want a pet that is easy to care for?" ,
+      "answers"  : {
+           "Yes" :  {"Cat" : 1, "Dog" : 1, "Rabbit": 2, "Fish" : 2},
+           "No"  :  {"Cat" : 2, "Dog" : 2, "Rabbit": 0, "Fish" : 0}
+      }
+   },
+
+
+   {
+       "question" : "Do you prefer a sociable pet?" ,
+       "answers"  : {
+            "Yes" :  {"Cat" : 2, "Dog" : 2, "Rabbit": 1, "Fish" : 0},
+            "No"  :  {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 2}
+      }
+   },
+
+   {
+       "question" : " Do you want a pet that is easy to take with you on trips?" ,
+       "answers"  : {
+            "Yes" :  {"Cat" : 0, "Dog" : 2, "Rabbit": 0, "Fish" : 0},
+            "No"  :  {"Cat" : 2, "Dog" : 0, "Rabbit": 2, "Fish" : 2}
+      }
+   },
+
+   {
+        "question" : "Do you prefer a pet that is independent?" ,
+        "answers"  : {
+             "Yes" :  {"Cat" : 2, "Dog" : 0, "Rabbit": 2, "Fish" : 1},
+             "No"  :  {"Cat" : 0, "Dog" : 2, "Rabbit": 0, "Fish" : 1}
+      }
+   },
+
+   {
+        "question": "Do you have the time and patience to train your pet?" ,
+        "answers" : {
+             "Yes":  {"Cat" : 2, "Dog" : 0, "Rabbit": 2, "Fish" : 2},
+             "No" :  {"Cat" : 0, "Dog" : 2, "Rabbit": 0, "Fish" : 0}
+      }
+   },
+
+   {
+        "question" : "Do you want a pet that is cheap to maintain?" ,
+         "answers" : {
+              "Yes":  {"Cat" : 1, "Dog" : 1, "Rabbit": 2, "Fish" : 2},
+              "No" :  {"Cat" : 2, "Dog" : 2, "Rabbit": 0, "Fish" : 0}
+      }
+   },
+
+   {
+       "question" : "Do you enjoy a quiet pet?" ,
+       "answers"  : {
+            "Yes" :  {"Cat" : 1, "Dog" : 0, "Rabbit": 2, "Fish" : 2},
+            "No"  :  {"Cat" : 1, "Dog" : 2, "Rabbit": 0, "Fish" : 0}
+      }
+   },
+
+   {
+      "question" : "Do you want a pet that doesn't require a lot of space?" ,
+      "answers"  : {
+           "Yes" :  {"Cat" : 2, "Dog" : 1, "Rabbit": 2, "Fish" : 3},
+           "No"  :  {"Cat" : 1, "Dog" : 2, "Rabbit": 0, "Fish" : 0}
+      }
+   },
+
+   {
+      "question" : "Do you have any experience caring for pets?" ,
+       "answers" : {
+           "Yes" :  {"Cat" : 1, "Dog" : 1, "Rabbit": 1, "Fish" : 1} ,
+           "No"  :  {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 0}
+      }
+   },
+
+   {
+       "question" : "Do you want a pet that is active and playful?" ,
+       "answers"  : {
+            "Yes" :  {"Cat" : 1, "Dog" : 2, "Rabbit": 1, "Fish" : 0} ,
+            "No"  :  {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 2}
+      }
+   },
+
+   {
+      "question" : "Are you prepared to care for a pet for many years?" ,
+      "answers"  : {
+           "Yes" :  {"Cat" : 2, "Dog" : 2, "Rabbit": 2, "Fish" : 1} ,
+           "No"  :  {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 2}
+      }
+   },
+
+   {
+       "question": "Do you want a pet that is easy to feed?" ,
+       "answers" : {
+            "Yes":  {"Cat" : 1, "Dog" : 1, "Rabbit": 2, "Fish" : 2} ,
+            "No" :  {"Cat" : 0, "Dog" : 0, "Rabbit": 0, "Fish" : 0}
+      }
+   }
+
+]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
