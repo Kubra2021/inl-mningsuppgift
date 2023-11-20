@@ -1,0 +1,89 @@
+/* style.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  /* 80% of the screen width */
+  max-width: 600px;
+  /* Maximum width */
+}
+
+h1 {
+  color: #3498db;
+  margin-top: 0;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  margin: 10px;
+  padding: 15px 20px;
+  /* Slightly increased button size */
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  /* Slightly rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  /* Tahtayı genişlet */
+  max-width: 400px;
+  /* Maksimum genişlik */
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #3498db;
+  font-size: 36px;
+  /* Slightly increased font size in cells */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #eee;
+}
+
