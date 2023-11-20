@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f2f2f2;
@@ -8,6 +6,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.board-container {
+  text-align: center;
 }
 
 .container {
@@ -23,9 +25,9 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
-  /* 80% of the screen width */
+
   max-width: 600px;
-  /* Maximum width */
+  
 }
 
 h1 {
@@ -44,13 +46,13 @@ button {
   flex: 1;
   margin: 10px;
   padding: 15px 20px;
-  /* Slightly increased button size */
+  
   font-size: 16px;
   background-color: #3498db;
   color: #fff;
   border: none;
   border-radius: 8px;
-  /* Slightly rounded corners */
+  
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -65,9 +67,7 @@ button:hover {
   grid-gap: 10px;
   margin-top: 20px;
   width: 100%;
-  /* Tahtayı genişlet */
   max-width: 400px;
-  /* Maksimum genişlik */
 }
 
 .cell {
@@ -75,7 +75,6 @@ button:hover {
   aspect-ratio: 1 / 1;
   border: 2px solid #3498db;
   font-size: 36px;
-  /* Slightly increased font size in cells */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,3 +86,16 @@ button:hover {
   background-color: #eee;
 }
 
+.player {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.player:hover {
+  background-color: #2070b4;
+}

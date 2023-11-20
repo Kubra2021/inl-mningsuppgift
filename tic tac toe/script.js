@@ -6,6 +6,7 @@ function startGame() {
   gameBoard = ['', '', '', '', '', '', '', '', ''];
   currentPlayer = 'X';
   renderBoard();
+  renderPlayers();
 }
 
 function renderBoard() {
@@ -41,7 +42,6 @@ function handleCellClick(event) {
 
 function addPlayerAndRender(playerName) {
   players.push(playerName);
-  renderPlayers();
 }
 
 function renderPlayers() {
@@ -50,9 +50,26 @@ function renderPlayers() {
 
   players.forEach(player => {
     const playerElement = document.createElement('div');
+    playerElement.className = 'player';
     playerElement.textContent = player;
+    playerElement.addEventListener('click', () => selectPlayer(player));
     playersContainer.appendChild(playerElement);
   });
+}
+
+function selectPlayer(player) {
+  currentPlayer = player;
+  alert(`Current player is now: ${currentPlayer}`);
+}
+
+
+
+function savePlayer() {
+  const playerName = document.getElementById('playerName').value;
+  players.push(playerName);
+  alert(`${playerName} added as a player!`);
+  document.getElementById('playerName').value = '';
+  renderPlayers();
 }
 
 function checkWinner() {
