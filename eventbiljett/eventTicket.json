@@ -1,0 +1,2 @@
+[{"id":1,"eventName":"Concert","prize":300,"eventTime":"2023-12-08T00:00:00.000Z","buyerId":1},
+{"id":2,"eventName":"Theatre","prize":null,"eventTime":"2023-12-04T23:00:00.000Z","buyerId":3}]
