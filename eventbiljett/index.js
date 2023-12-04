@@ -72,7 +72,8 @@ function userMenu() {
 function adminMenu() {
   console.log("Welcome, Admin!");
   console.log("1. View User Purchases");
-  console.log("2. Logout");
+  console.log("2. Create New Event");
+  console.log("3. Logout");
 
   const choice = parseInt(prompt("Enter your choice: "));
 
@@ -82,6 +83,10 @@ function adminMenu() {
       adminMenu();
       break;
     case 2:
+      Admin.createNewEvent(); 
+      adminMenu();
+      break;
+    case 3:
       currentUser = null;
       startProgram();
       break;
@@ -90,5 +95,7 @@ function adminMenu() {
       adminMenu();
   }
 }
+
+
 
 startProgram();

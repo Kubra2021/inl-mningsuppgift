@@ -1,4 +1,8 @@
 [{"id":1,"eventName":"Concert","prize":300,"eventTime":"2023-12-08T00:00:00.000Z","buyerId":1},
 {"id":2,"eventName":"Theatre","prize":null,"eventTime":"2023-12-04T23:00:00.000Z","buyerId":3},
 {"id":3,"eventName":"Opera","prize":1000,"eventTime":"2023-12-20T23:00:00.000Z","buyerId":4},
-{"id":4,"eventName":"Malmo FF - Hammarby IF","prize":1500,"eventTime":"2024-01-18T00:00:00.000Z","buyerId":5}]
+{"id":4,"eventName":"Malmo FF - Hammarby IF","prize":1500,"eventTime":"2024-01-18T00:00:00.000Z","buyerId":5},
+{"id":5,"eventName":"Mozart concert","prize":2000,"eventTime":"1780-10-11T00:00:00.000Z","buyerId":null},
+{"id":6,"eventName":"Match ","prize":500,"eventTime":"2024-02-16T00:00:00.000Z","buyerId":null},
+{"id":7,"eventName":"Teatre","prize":300,"eventTime":"2024-01-16T00:00:00.000Z","buyerId":null},
+{"id":6,"eventName":"Match ","prize":500,"eventTime":"2024-02-16T00:00:00.000Z","buyerId":1}]

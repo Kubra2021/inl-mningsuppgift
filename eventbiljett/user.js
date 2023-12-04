@@ -68,31 +68,36 @@ export default class User {
 
   static buyEventTicket() {
     const eventTickets = EventTicket.deserializeFromJson();
+    const currentUser = User.currentUser;
 
-    
-    if (!User.currentUser) {
+    if (!currentUser) {
       console.log("Please log in first.");
       return;
     }
 
-    const eventId = eventTickets.length + 1;
-    const eventName = prompt("Enter the event name: ");
-    const prize = parseInt(prompt("Enter the ticket price: "));
-    const eventTimeStr = prompt("Enter the event time (YYYY-MM-DDTHH:mm:ss format): ");
+    console.log("Available Events:");
+    eventTickets.forEach(ticket => {
+      console.log(`Event ID: ${ticket.id}, Name: ${ticket.eventName}, Price: ${ticket.prize}, Time: ${ticket.eventTime}`);
+    });
 
-    
-    const eventTime = new Date(eventTimeStr);
+    const selectedEventId = parseInt(prompt("Enter the Event ID to purchase a ticket: "));
+    const selectedEvent = eventTickets.find(ticket => ticket.id === selectedEventId);
 
-    const newEventTicket = new EventTicket(eventId, eventName, prize, eventTime, User.currentUser.id);
+    if (!selectedEvent) {
+      console.log("Invalid Event ID. Please try again.");
+      return;
+    }
+
+    const newEventTicket = new EventTicket(selectedEventId, selectedEvent.eventName, selectedEvent.prize, selectedEvent.eventTime, currentUser.id);
     eventTickets.push(newEventTicket);
 
     EventTicket.serializeToJson(eventTickets);
-    console.log(`Ticket for ${eventName} purchased successfully!`);
+    console.log(`Ticket for "${selectedEvent.eventName}" purchased successfully!`);
   }
-   
-    static findUserById(userId) {
-    const users = User.deserializeFromJson();
-    return users.find(u => u.id === userId);
-  }
+  static findUserById(userId) {
+  const users = User.deserializeFromJson();
+  return users.find(user => user.id === userId);
 }
+}
+
   

@@ -40,13 +40,42 @@ export default class Admin {
       return null;
     }
   }
-    static viewUserPurchases() {
-    const eventTickets = EventTicket.deserializeFromJson();
-    console.log("User Purchases:");
+    
+  static viewPurchasedTickets() {
+  const eventTickets = EventTicket.deserializeFromJson();
 
-    eventTickets.forEach(ticket => {
-      const user = User.findUserById(ticket.buyerId);
-      console.log(`Event: ${ticket.eventName}, User: ${user ? user.username : 'User not found'}`);
-    });
+  console.log("Purchased Tickets:");
+  eventTickets.forEach(ticket => {
+    const user = User.findUserById(ticket.buyerId);
+    console.log(`Event: ${ticket.eventName}, User: ${user ? user.username : 'User not found'}`);
+  });
+}
+  
+  static createNewEvent() {
+    const eventTickets = EventTicket.deserializeFromJson();
+
+    const eventId = eventTickets.length + 1;
+    const eventName = prompt("Enter the event name: ");
+    const prize = parseInt(prompt("Enter the ticket price: "));
+    const eventTimeStr = prompt("Enter the event time (YYYY-MM-DDTHH:mm:ss format): ");
+
+    const eventTime = new Date(eventTimeStr);
+
+    const newEventTicket = new EventTicket(eventId, eventName, prize, eventTime, null); // buyerId: null
+    eventTickets.push(newEventTicket);
+
+    EventTicket.serializeToJson(eventTickets);
+    console.log(`Event "${eventName}" created successfully!`);
   }
+
+  static viewUserPurchases() {
+  const eventTickets = EventTicket.deserializeFromJson();
+  const users = User.deserializeFromJson();
+
+  console.log("User Purchases:");
+  eventTickets.forEach(ticket => {
+    const user = users.find(u => u.id === ticket.buyerId);
+    console.log(`Event: ${ticket.eventName}, User: ${user ? user.username : 'User not found'}`);
+  });
+}
 }
